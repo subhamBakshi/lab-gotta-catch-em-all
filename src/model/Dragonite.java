@@ -19,3 +19,51 @@ package model;
 //type = "DRAGON"
 //evolution = "DRATINI"
 //baseExp = "270" 
+
+public class Dragonite extends Pokemon
+{
+	String characteristics;
+	String type;
+	String evolution;
+	String baseExp;
+	public final String getCharacteristics() {
+		return characteristics;
+	}
+	public final void setCharacteristics(String characteristics) {
+		this.characteristics = characteristics;
+	}
+	public final String getType() {
+		return type;
+	}
+	public final void setType(String type) {
+		this.type = type;
+	}
+	public final String getEvolution() {
+		return evolution;
+	}
+	public final void setEvolution(String evolution) {
+		this.evolution = evolution;
+	}
+	public final String getBaseExp() {
+		return baseExp;
+	}
+	public final void setBaseExp(String baseExp) {
+		this.baseExp = baseExp;
+	}
+	
+	public Dragonite(String pkname, int pknum, String chr, String typ, String evol, String Base)
+	{
+		super(pkname, pknum);
+		characteristics = chr;
+		type = typ;
+		evolution = evol;
+		baseExp = Base;
+		
+		pkname = "Dragonite";
+		pknum = 149;
+		chr = "Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.";
+		typ = "DRAGON";
+		evol = "DRATINI";
+		Base = "270";
+	}
+}
